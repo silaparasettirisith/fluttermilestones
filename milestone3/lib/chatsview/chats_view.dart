@@ -35,7 +35,7 @@ class ChatView extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.all(10),
+        padding:const EdgeInsets.all(10),
         child: Column(
           children: [
             const SearchBar(leading: Icon(Icons.search), hintText: "Search.."),
@@ -56,12 +56,12 @@ class ChatView extends StatelessWidget {
                   key: ValueKey<Chats>(chat),
                   child: ListTile(
                     onTap: () {
-                      print("show chats");
+            
                     },
                     trailing: Text("${chat.status}"),
                     leading: InkWell(
                       onTap: () {
-                        print("show person details");
+                  
 
                         showDialog<String>(
                           context: context,

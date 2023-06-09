@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:milestone3/hiringscreen/screen1.dart';
 
-import 'doctorappoitment/doctorscree.dart';
-
-import 'chatsview/chats_view.dart';
 
 import 'developersjobs/jobsview.dart';
 
