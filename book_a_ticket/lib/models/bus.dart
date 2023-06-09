@@ -92,12 +92,17 @@ class Bus {
         "end_location": endLocation,
         "fulltype": fulltype,
         "seattype": seattype,
+        // ignore: unnecessary_cast
         "seatsleft": seatsleft as String,
         "startTime": startTime,
         "endTime": endTime,
+        // ignore: unnecessary_cast
         "price": price as String,
+        // ignore: unnecessary_cast
         "review": review as String,
+        // ignore: unnecessary_cast
         "ratings": ratings as String,
+        // ignore: unnecessary_cast
         "peopleChoice": peopleChoice as String,
       };
 

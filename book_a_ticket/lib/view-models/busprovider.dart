@@ -16,6 +16,7 @@ class BusProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  // ignore: non_constant_identifier_names
   filterBuses(travelling_from, travelling_to) {
     filteredBuses = [];
     for (int busIndex = 0; busIndex < buses.length; busIndex++) {

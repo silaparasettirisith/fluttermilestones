@@ -38,6 +38,6 @@ class User {
       };
   @override
   String toString() {
-    return "name : ${name} , age : ${age},gender: ${gender},email : ${email},phoneno : ${phoneno},seatnumber:${seatnumber}";
+    return "name : $name , age : $age,gender: $gender,email : $email,phoneno : $phoneno,seatnumber:$seatnumber";
   }
 }

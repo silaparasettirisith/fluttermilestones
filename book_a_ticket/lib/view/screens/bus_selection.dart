@@ -29,6 +29,7 @@ class _BusSelectionState extends State<BusSelection> {
 
     selectSeatProvider.busSelected.resetSeatNumber();
 
+    // ignore: prefer_is_empty
     if (myTripProvider.upcomingTrips.length > 0) {
       for (int i = 0; i < myTripProvider.upcomingTrips.length; i++) {
         if (myTripProvider.upcomingTrips[i]["dateofJourney"] ==
@@ -89,6 +90,7 @@ class _BusSelectionState extends State<BusSelection> {
                   const SizedBox(
                     height: 2,
                   ),
+                  // ignore: avoid_unnecessary_containers
                   Container(
                       child: const Text(
                           "  Hurry! Buses on this route are filling up fast ",
@@ -97,12 +99,14 @@ class _BusSelectionState extends State<BusSelection> {
                                   Color.fromARGB(255, 248, 213, 152),
                               fontSize: 15))),
                   ListTile(
+                      // ignore: unnecessary_string_interpolations
                       title: Text("${data.busSelected.name}",
                           style: Theme.of(context).textTheme.titleMedium),
+                           // ignore: unnecessary_string_interpolations
                       subtitle: Text("${data.busSelected.fulltype}",
                           style: const TextStyle(
                               fontSize: 15,
-                              color: const Color.fromARGB(255, 113, 107, 107))),
+                              color:  Color.fromARGB(255, 113, 107, 107))),
                       trailing: Container(
                         padding: const EdgeInsets.all(6),
                         decoration: BoxDecoration(
@@ -123,7 +127,7 @@ class _BusSelectionState extends State<BusSelection> {
                                   color: Colors.white,
                                   fontSize: 15,
                                 ),
-                                text: "${data.busSelected.review}",
+                                text: data.busSelected.review,
                               ),
                             ],
                           ),
@@ -234,6 +238,7 @@ class _BusSelectionState extends State<BusSelection> {
                                 const SizedBox(
                                   height: 20,
                                 ),
+                                // ignore: avoid_unnecessary_containers
                                 Container(
                                   child: const Row(
                                     crossAxisAlignment:
@@ -262,6 +267,7 @@ class _BusSelectionState extends State<BusSelection> {
                                     i < 24;
                                     i = i + 4,
                                     seatAlphabet = seatAlphabet + 1) ...[
+                                  // ignore: avoid_unnecessary_containers
                                   Container(
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,

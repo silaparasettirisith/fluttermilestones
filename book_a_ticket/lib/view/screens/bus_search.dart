@@ -4,6 +4,8 @@ import 'package:book_a_ticket/view/screens/travel_buses.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:searchfield/searchfield.dart';
+
+// ignore: depend_on_referenced_packages
 import 'package:intl/intl.dart';
 
 class BusSearch extends StatefulWidget {
@@ -15,7 +17,9 @@ class BusSearch extends StatefulWidget {
 
 class _BusSearchState extends State<BusSearch> {
   TextEditingController dateCtl = TextEditingController();
+  // ignore: non_constant_identifier_names
   TextEditingController travelling_from = TextEditingController();
+  // ignore: non_constant_identifier_names
   TextEditingController travelling_to = TextEditingController();
 
   // ignore: non_constant_identifier_names
@@ -116,6 +120,7 @@ class _BusSearchState extends State<BusSearch> {
                       children: [
                         SearchField(
                           validator: (p0) {
+                            // ignore: prefer_is_empty
                             if (p0?.length == 0) {
                               return "Travelling From Required";
                             } else if (travelling_from.text ==
@@ -179,6 +184,7 @@ class _BusSearchState extends State<BusSearch> {
                         ),
                         SearchField(
                           validator: (p0) {
+                            // ignore: prefer_is_empty
                             if (p0?.length == 0) {
                               return "Travelling To Required";
                             } else if (travelling_from.text ==
@@ -248,6 +254,7 @@ class _BusSearchState extends State<BusSearch> {
                             readOnly: true,
                             controller: dateCtl,
                             validator: (p0) {
+                              // ignore: prefer_is_empty
                               if (p0?.length == 0) {
                                 return "Date is Required";
                               }

@@ -1,6 +1,6 @@
 class AudioPlayer {
-  double volume=0;
-  bool isplaying=false;
+  double volume = 0;
+  bool isplaying = false;
 
   void play() {
     print("start playing audio");
@@ -15,54 +15,45 @@ class AudioPlayer {
   }
 }
 
-class Visualizer
-{
-  void visualizeAudio()
-  {
+class Visualizer {
+  void visualizeAudio() {
     print("to visualize the audio being played ");
   }
 }
-class Equalizer
-{
-  void adjustEqualizer()
-  {
+
+class Equalizer {
+  void adjustEqualizer() {
     print("to adjust the audio equalizer settings ");
   }
 }
 
-class MusicPlayer extends AudioPlayer implements Visualizer,Equalizer
-{
+class MusicPlayer extends AudioPlayer implements Visualizer, Equalizer {
   @override
   void adjustEqualizer() {
-    // TODO: implement adjustEqualizer
     print("Adjust Equalizer");
   }
 
   @override
   void visualizeAudio() {
-    // TODO: implement visualizeAudio
     print("Visulization Audio");
   }
 
   @override
   void play() {
-    // TODO: implement play
     super.play();
   }
 
-  void adjustAudio()
-  {
+  void adjustAudio() {
     print("show audio visualization ");
   }
 
-  void showVisualization()
-  {
+  void showVisualization() {
     print("adjust audio settings ");
-  } 
+  }
 }
 
 void main(List<String> args) {
-  MusicPlayer m=MusicPlayer();
+  MusicPlayer m = MusicPlayer();
   m.adjustEqualizer();
   m.play();
   m.adjustAudio();

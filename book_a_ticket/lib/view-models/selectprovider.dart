@@ -15,10 +15,14 @@ class SelectSeatProvider extends ChangeNotifier {
   List<TextEditingController> name = [];
   List<TextEditingController> age = [];
   List<TextEditingController> genders = [];
+  // ignore: non_constant_identifier_names
   TextEditingController email_controller = TextEditingController();
+  // ignore: non_constant_identifier_names
   TextEditingController phonenumber_controller = TextEditingController();
+  // ignore: prefer_typing_uninitialized_variables
   var coupouns;
 
+// ignore: non_constant_identifier_names
   SetUsersSelectedBus(Bus SelectedBus) {
     busSelected = SelectedBus;
 

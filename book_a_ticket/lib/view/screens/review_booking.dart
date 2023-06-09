@@ -9,6 +9,7 @@ import 'package:provider/provider.dart';
 import 'package:book_a_ticket/view-models/pick_drop_provider.dart';
 import 'package:book_a_ticket/view-models/selectprovider.dart';
 import 'package:book_a_ticket/view/widgets/bottomsheet.dart';
+// ignore: depend_on_referenced_packages
 import 'package:intl/intl.dart';
 
 class ReviewBooking extends StatefulWidget {
@@ -19,6 +20,7 @@ class ReviewBooking extends StatefulWidget {
 }
 
 class _ReviewBookingState extends State<ReviewBooking> {
+  // ignore: prefer_typing_uninitialized_variables
   var gender;
 
   var emailPhoneNo = {};
@@ -52,8 +54,10 @@ class _ReviewBookingState extends State<ReviewBooking> {
         Provider.of<MyTripProvider>(context, listen: false);
     List<TextEditingController> name = selectSeatProvider.name;
     List<TextEditingController> age = selectSeatProvider.age;
+    // ignore: non_constant_identifier_names
     TextEditingController email_controller =
         selectSeatProvider.email_controller;
+            // ignore: non_constant_identifier_names
     TextEditingController phonenumber_controller =
         selectSeatProvider.phonenumber_controller;
     var coupouns = selectSeatProvider.coupouns;
@@ -89,6 +93,7 @@ class _ReviewBookingState extends State<ReviewBooking> {
         body: SingleChildScrollView(
           child: Column(
             children: [
+              // ignore: sized_box_for_whitespace
               Container(
                 width: double.infinity,
                 height: 200,
@@ -131,6 +136,7 @@ class _ReviewBookingState extends State<ReviewBooking> {
                         trailing: Column(
                           children: [
                             Text(
+                                // ignore: unnecessary_string_interpolations
                                 "${selectSeatProvider.busSelected.endTime}",
                                 style: const TextStyle(
                                     color: Colors.black,
@@ -160,6 +166,7 @@ class _ReviewBookingState extends State<ReviewBooking> {
                   ),
                 ),
               ),
+              // ignore: avoid_unnecessary_containers
               Container(
                 child: Card(
                   child: Padding(
@@ -202,6 +209,7 @@ class _ReviewBookingState extends State<ReviewBooking> {
                                   user[i].name = newValue!;
                                 },
                                 validator: (value) {
+                                  // ignore: prefer_is_empty
                                   if (value?.length == 0) {
                                     return "Name is Required";
                                   } else if (value!.length < 5) {
@@ -229,6 +237,7 @@ class _ReviewBookingState extends State<ReviewBooking> {
                                         user[i].age = newValue!;
                                       },
                                       validator: (value) {
+                                        // ignore: prefer_is_empty
                                         if (value?.length == 0) {
                                           return "Age is Requried";
                                         } else if (int.parse(value!) <= 0 ||
@@ -288,6 +297,7 @@ class _ReviewBookingState extends State<ReviewBooking> {
                   ),
                 ),
               ),
+              // ignore: avoid_unnecessary_containers
               Container(
                 child: Card(
                   child: Padding(
@@ -321,6 +331,7 @@ class _ReviewBookingState extends State<ReviewBooking> {
                             },
                             validator: (value) {
                               RegExp regExp = RegExp(r"^[a-z]*@gmail.com");
+                              // ignore: prefer_is_empty
                               if (value?.length == 0) {
                                 return "Email is Required";
                               } else if (!regExp.hasMatch(value.toString())) {
@@ -361,6 +372,7 @@ class _ReviewBookingState extends State<ReviewBooking> {
                                   },
                                   controller: phonenumber_controller,
                                   validator: (value) {
+                                    // ignore: prefer_is_empty
                                     if (value?.length == 0) {
                                       return "Phonenumber is Requried";
                                     } else if ((value?.length != 10)) {
@@ -382,6 +394,7 @@ class _ReviewBookingState extends State<ReviewBooking> {
                   ),
                 ),
               ),
+              // ignore: avoid_unnecessary_containers
               Container(
                 child: Card(
                   child: Padding(

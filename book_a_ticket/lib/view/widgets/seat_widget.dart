@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 import 'package:book_a_ticket/view/widgets/bottomsheet.dart';
 
+// ignore: must_be_immutable
 class SeatWidget extends StatefulWidget {
   int seatNum;
   String seatAlphabet;

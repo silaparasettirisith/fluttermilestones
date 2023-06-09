@@ -7,8 +7,10 @@ import 'package:book_a_ticket/view/screens/my_trips.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+// ignore: depend_on_referenced_packages
 import 'package:intl/intl.dart';
 
+// ignore: must_be_immutable
 class TravelBuses extends StatefulWidget {
   String from;
   String to;
@@ -115,6 +117,7 @@ class _TravelBusesState extends State<TravelBuses> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      // ignore: prefer_is_empty
                       if (data.filteredBuses.length == 0)
                         const Center(
                           child: Column(
@@ -162,6 +165,7 @@ class _TravelBusesState extends State<TravelBuses> {
                               ));
                             }
                           },
+                          // ignore: avoid_unnecessary_containers
                           child: Container(
                             child: Card(
                               shape: RoundedRectangleBorder(

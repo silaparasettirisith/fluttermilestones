@@ -8,10 +8,15 @@ import 'package:provider/provider.dart';
 
 import 'package:book_a_ticket/view/screens/payment_mode.dart';
 
+// ignore: must_be_immutable
 class BottomSheets extends StatefulWidget {
+  // ignore: prefer_typing_uninitialized_variables
   var visibleBottomSheet;
+  // ignore: prefer_typing_uninitialized_variables
   var totalFare;
+  // ignore: prefer_typing_uninitialized_variables
   var seatCount;
+  // ignore: prefer_typing_uninitialized_variables
   var nextRoute;
   BottomSheets(
       this.visibleBottomSheet, this.totalFare, this.seatCount, this.nextRoute,
@@ -90,6 +95,7 @@ class _BottomSheetsState extends State<BottomSheets> {
                               for (int i = 0;
                                   i < reviewBookingProvider.users.length;
                                   i++) {
+                                // ignore: prefer_is_empty
                                 if (reviewBookingProvider.users[i].name
                                         .trim()
                                         .length !=

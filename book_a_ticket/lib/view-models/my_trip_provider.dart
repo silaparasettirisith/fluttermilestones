@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MyTripProvider extends ChangeNotifier {
+  // ignore: non_constant_identifier_names
   String travelling_from = "";
+  // ignore: non_constant_identifier_names
   String travelling_to = "";
   String dateofJourney = "";
 

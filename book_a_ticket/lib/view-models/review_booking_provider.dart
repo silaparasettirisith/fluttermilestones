@@ -2,7 +2,9 @@ import 'package:book_a_ticket/models/user.dart';
 import 'package:flutter/material.dart';
 
 class ReviewBookingProvider extends ChangeNotifier {
+  // ignore: non_constant_identifier_names
   final form_key = GlobalKey<FormState>();
+  // ignore: non_constant_identifier_names
   final emailform_key = GlobalKey<FormState>();
   List<User> users = [];
   var userValidate = false;

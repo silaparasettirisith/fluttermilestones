@@ -6,6 +6,7 @@ import 'package:book_a_ticket/view-models/selectprovider.dart';
 import 'package:book_a_ticket/view/widgets/bottomsheet.dart';
 
 class PickUpDrop extends StatefulWidget {
+  // ignore: prefer_const_constructors_in_immutables
   PickUpDrop({super.key});
 
   @override

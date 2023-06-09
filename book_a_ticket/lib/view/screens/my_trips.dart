@@ -163,6 +163,7 @@ class _MyTripsState extends State<MyTrips> with SingleTickerProviderStateMixin {
           body: TabBarView(controller: _tabController, children: <Widget>[
             Consumer<MyTripProvider>(
               builder: (context, data, child) {
+                // ignore: prefer_is_empty
                 if (data.upcomingTrips.length == 0) {
                   return const Center(
                     child: Column(
